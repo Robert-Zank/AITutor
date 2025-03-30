@@ -30,4 +30,6 @@ TutorAI is a web-based educational tool designed to help students learn faster a
    ```bash
    git clone https://github.com/your-username/tutorai.git
    cd tutorai
+   ```
+   Please note I have excluded some files for security reasons
 
