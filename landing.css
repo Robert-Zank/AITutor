@@ -1,0 +1,125 @@
+/* Global Styles */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header {
+    position: relative;
+    text-align: center;
+    max-height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.header img {
+    object-fit: cover;
+    width: 40%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+/* Header Card */
+.header-card {
+    text-align: center;
+}
+
+.header-card h1 {
+    color: #8162fd;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: #1e1e1e;
+    border: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card img {
+    border-radius: 8px;
+    max-width: 75%;
+    height: auto;
+}
+
+/* Section Divider */
+.section-divider {
+    border: none;
+    border-top: 2px solid #6c63ff;
+    width: 90%;
+    margin: 7rem auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #6c63ff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #6b51d2;
+    border-color: #6b51d2;
+    color: #dcdcdc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5441a4;
+    border-color: #5441a4;
+}
+
+.btn-primary:active {
+    background-color: #383080;
+    color: #f5f5f5;
+}
+
+/* Footer */
+.footer {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    text-align: center;
+    color: #b5b5b5;
+}
+
+.footer a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

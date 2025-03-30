@@ -1,0 +1,180 @@
+body, h1, h2, h3, h4, h5, h6, p, label, input, table, th, td, footer {
+    color: white !important; /* Force all text to white */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #333;
+    text-align: center;
+    margin-top: auto;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    flex-grow: 1;
+}
+
+.modal-content {
+    background-color: #333; /* Dark grey background for modal */
+    color: white; /* White text inside modal */
+}
+
+table.table.table-striped tbody tr:hover {
+    background-color: #888; /* Light grey for hover */
+}
+
+/* Footer */
+.footer {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    text-align: center;
+    color: #b5b5b5;
+}
+
+.footer a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #f8f9fa !important;
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #f8f9fa !important;
+}
+
+.gradient-header {
+    background: linear-gradient(45deg, #1d3557, #457b9d);
+}
+
+.animate-text {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.custom-blue-btn {
+    background-color: #457b9d; /* Primary blue color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-blue-btn:hover {
+    background-color: #1d3557; /* Darker blue for hover */
+    color: white; /* Ensure text remains white */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.selectable-row {
+    cursor: pointer;
+}
+
+#historyDate {
+    background-color: #333; /* Dark grey for the input box */
+    color: #fff; /* White text color */
+    border: 1px solid #555; /* Slightly lighter border */
+    
+}
+
+#numRecords {
+    background-color: #333; /* Dark grey for the input box */
+    color: #fff; /* White text color */
+    border: 1px solid #555; /* Slightly lighter border */
+    
+}
+
+#textInput {
+    background-color: #333; /* Dark grey for the input box */
+    color: #fff; /* White text color */
+    border: 1px solid #555; /* Slightly lighter border */
+    
+}
+
+#textInput::placeholder {
+    color: #999; /* White placeholder text */
+}
+
+#knowledgeDropdown {
+    background-color: #333; /* Dark grey for the dropdown */
+    color: #fff; /* White text color */
+    border: 1px solid #555; /* Slightly lighter border */
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #333; /* Dark grey background for the card */
+    color: #fff; /* White text color inside the card */
+}
+
+.selectable-row:hover {
+    background-color: #f8f9fa; /* Light gray */
+}
+
+#output {
+    background-color: #333 !important; /* Dark grey background */
+    color: #fff !important; /* White text */
+    border: 1px solid #555 !important; /* Lighter grey border */
+    text-align: left !important;
+}
+
+/* Style for code chunks */
+.code-block {
+    background-color: black; /* Lighter grey */
+    border: none;
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.code-block pre {
+    margin: 0; /* Remove margin for better alignment */
+}
+
+/* Remove text highlighting inside code chunks */
+.code-block code {
+    background-color: transparent; /* Removes the grey background */
+    color: inherit; /* Ensures text color matches the surrounding text */
+    font-family: monospace; /* Keeps the monospaced font for code */
+    padding: 0; /* Removes any padding */
+}

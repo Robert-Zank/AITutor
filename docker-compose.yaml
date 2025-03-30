@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  php:
+    container_name: www
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"          # Map port 8080 on your host to port 80 in the container
+      - "8443:443"         # Map port 8443 on your host to port 443 in the container
+    volumes:
+      - ./html:/var/www/html  # Bind mount the local html directory to /var/www/html in the container
+      - ./password:/var/www/password  # Optional: bind password directory
+      - ./mycert.crt:/etc/ssl/certs/mycert.crt  # SSL certificate
+      - ./mycert.key:/etc/ssl/private/mycert.key  # SSL key
+    stdin_open: true          # Keep the container's stdin open
+    tty: true                 # Enable terminal access
+
+  db:
+    image: mysql:latest
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: example_password  # Root password for MySQL
+      MYSQL_DATABASE: tutorai_db             # Database name
+      MYSQL_USER: tutorai_user               # Database user
+      MYSQL_PASSWORD: tutorai_password       # User password
+    volumes:
+      - db_data:/var/lib/mysql               # Persistent data storage for MySQL
+    ports:
+      - "3306:3306"                          # Expose MySQL port
+
+volumes:
+  db_data:                                   # Declare the named volume for MySQL data
